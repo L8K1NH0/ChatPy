@@ -18,7 +18,9 @@ def homepage(): # função
 
 # roda o aplicativo
 #app.run(debug=True) # NO FINAL TIRAR MODO DEBUG
-socketio.run(app, host="192.168.1.5") # digitar no terminal (ipconfig), IPv4
+#socketio.run(app, host="192.168.1.5") # digitar no terminal (ipconfig), IPv4
+
+socketio.run(app, port=5000)
 
 # Websocket -> "tunel de conexao" entre PCs
 
